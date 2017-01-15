@@ -1,6 +1,21 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
-
-<%= form_tag("/sms/send", method: "post") do %>
-<!-- add form elements here -->
-<% end %>
+<head>
+    <link rel="stylesheet" href=/app/assets/stylesheets/home.css>
+</head>
+<body>
+    <div class="welcome">
+        <h1>Welcome!</h1>
+        <h2>This is Alex Hower's SMS app</h2>
+        <p>I took the background image while I was on vacation in the Virgin Islands over the holidays.</p>
+    </div>
+    <div class="block">
+    </div>
+    <div class="form">
+    <%= form_tag("/sms/send", method: "post") do |f|%>
+     <%= label_tag(:phone, "Type number:", :class => "label") %>
+     <%= telephone_field(:user, :phone) %>
+     <%= label_tag(:message, "Send Message:", :class => "label") %>
+     <%= text_area_tag(:message, "Hi, nice site", size: "24x6") %>
+     <%= submit_tag("Send", :class => "submit") %>
+    <% end %>
+    </div>
+</body>
