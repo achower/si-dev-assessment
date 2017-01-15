@@ -1,2 +1,16 @@
-<h1>Pages#sms</h1>
-<p>Find me in app/views/pages/sms.html.erb</p>
+<head>
+    <link rel="stylesheet" href=/app/assets/stylesheets/home.css>
+</head>
+<body>
+<div class="welcome">
+    <h1>Message Sent!</h1>
+    <p><stong>You sent a message to:</stong></p> 
+    <%= params[:user][:phone] %>
+    <br />
+    <p><strong>Your message was:</strong></p>
+    <%= params[:message] %>
+    <br />
+    <br />
+    <a href="https://alex-hower-si-dev-assessment-ahower.c9users.io">Click here to return to the home page</a>
+</div>
+</body>
