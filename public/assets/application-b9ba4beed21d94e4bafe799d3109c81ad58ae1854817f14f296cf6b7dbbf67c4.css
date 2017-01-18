@@ -1,0 +1,61 @@
+body {
+    background-image: url("jost-van-dyke.png");
+    background-image: asset-data-url("jost-van-dyke.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.welcome {
+    background-color: white;
+    text-align: center;
+    width: 25%;
+    margin: auto;
+    padding: .5px;
+    border-radius: 25px;
+    opacity: .8;
+}
+.block {
+    margin: 100px;
+}
+.form {
+    background-color: white;
+    width: 25%;
+    height: 165px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 25px;
+    opacity: .8;
+    text-align: center;
+}
+.label {
+    display: block;
+    padding: 1px;
+}
+.submit {
+    display: block;
+    margin: auto;
+    padding: 1px;
+}
+.debug_dump {
+    background-color:white;
+    opacity: .8;
+    border-radius: 5px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ *= home
+ */
+
