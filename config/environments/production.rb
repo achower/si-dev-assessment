@@ -3,6 +3,9 @@ Rails.application.configure do
 
   # Code is not reloaded between requests.
   config.cache_classes = true
+  # I added the 2 lines below in an attempt to fix the css for Heroku
+  config.serve_static_assets = true
+  config.assets.digest = true
 
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both threaded web servers
@@ -22,8 +25,8 @@ Rails.application.configure do
   config.assets.js_compressor = :uglifier
   # config.assets.css_compressor = :sass
 
-  # Do not fallback to assets pipeline if a precompiled asset is missed.
-  config.assets.compile = false
+  # Do not fallback to assets pipeline if a precompiled asset is missed.  NOTE CHANGED TO TRUE IN AN ATTEMPT TO FIX HEROKU NOT SHOWING STYLES
+  config.assets.compile = true
 
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 
