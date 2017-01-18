@@ -1,8 +1,7 @@
 body {
     background-image: url("jost-van-dyke.png");
-    background-image: asset-data-url("jost-van-dyke.png");
+/*    background-image: asset-data-url("jost-van-dyke.png"); */
     background-repeat: no-repeat;
-    background-size: 100%;
     background-attachment: fixed;
     background-size: cover;
 }
